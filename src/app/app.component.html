@@ -1,0 +1,26 @@
+<div class="container-fluid border bg-light p-5 mb-4 d-flex flex-column justify-content-center align-items-center">
+   <div>
+    <button routerLinkActive="btn-danger" 
+    [routerLinkActiveOptions]="{exact:true}"  
+    routerLink="/home" 
+    ngClass="btn-info"
+    class="mb-4 btn">Home</button>
+   </div>
+  <div>
+    <button routerLinkActive="btn-danger" 
+    [routerLinkActiveOptions]="{exact:true}"
+     routerLink="/product" 
+     ngClass="btn-success"
+     class="mb-4 btn ">Product</button>
+  </div>
+<div>
+  <button routerLinkActive="btn-danger" 
+  [routerLinkActiveOptions]="{exact:true}" 
+  routerLink="/contact" 
+  ngClass="btn-primary"
+  class="mb-4 btn ">Contact</button>
+</div>
+</div>
+<div class="border p-5">
+  <router-outlet></router-outlet>
+</div>
